@@ -14,5 +14,5 @@ jobs:
       - name: Prueba del yml
         run: echo "Hola desde el repositorio"
       - name: Variable de entorno
-        run: echo "Hola desde el repositorio $ {{env.ENC_ID }}"
+        run: echo "Hola desde el repositorio $ {{ env.API_KEY}}"
 
