@@ -1,12 +1,13 @@
-name: Secrets and Enviorment Variables
+name: Secrets and Environment Variables
 
 on: 
   workflow_dispatch
 
-job:
+jobs:
   top-secret:
     runs-on: ubuntu-latest
-    env: ${{ secrets.API_KEY }}
+    env: 
+      API_KEY: ${{ secrets.API_KEY }}
     
     steps:
       - name: Prueba del yml
