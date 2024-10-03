@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       API_KEY: ${{ secrets.API_KEY }}
+      ENC_ID: ${{ vars.ENC_ID }}
     
     steps:
       - name: Prueba del yml
