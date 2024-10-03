@@ -13,3 +13,6 @@ jobs:
     steps:
       - name: Prueba del yml
         run: echo "Hola desde el repositorio"
+      - name: Variable de entorno
+        run: echo "Hola desde el repositorio $ {{ ENC_ID }}"
+        
